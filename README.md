@@ -54,10 +54,13 @@ Even if you dont see the promt, enter the password and you will see the nodes be
 ---
 Now that your nodes are up and running, you can connect to your new local network on your MyCrypto app!
 * on the bottom LH corner click change network
+
 ![change_network](screenshots/change_network.png)
 * add custom node
+ 
 ![custom_node](screenshots/custom_node.png)
 * enter custom network, network name, chain ID you created, and local network URL
+
 ![custom_network](screenshots/custom_network.png)
 * Save & Use custom Node
 * confirm you are on custom networkname
@@ -69,6 +72,7 @@ You are now ready to view and send money within your custom network using the ac
 * click "select wallet file", navigate to your directory where you savd your geth tools, select node1, keystore, and upen the UTC file
 * enter the password you saved for account1 (node1), unlock wallet
 * you should see millions of ETH in your wallet!
+
 ![full_wallet](screenshots/full_wallet.png)
 
 ---
@@ -76,8 +80,11 @@ Now lets test it out and send a transaction on your local network!
 * select "Send Ether & Tokens"
 * enter the public address for your other account
 * enter noticable amount and send
+
 ![confirm](screenshots/confirm_tx.png)
+
 ![pending](screenshots/pending_tx.png)
+
 ![success](screenshots/success_tx.png)
 
 You've successfully completed your first block on your private blockchain.
@@ -91,8 +98,9 @@ If you want to check your new balance in code
 * touch crypto.py
 * code crypto.py  - to open in vs code
 * enter code below:
+
 ![crypto](screenshots/crypto_py.png)
-* include .env file with your account1 private key (you can grab this from mycrypto app "wallet info")
+* include an .env file with your account1 private key (you can grab this from mycrypto app "wallet info")
 * save and navigate back to terminal directory containing crypto.py
 * run > python crypto.py
 * you should see your blocks mined, balance, and account address.
