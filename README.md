@@ -49,7 +49,7 @@ Now you can use the nodes to begin mining new blocks. In your CLI:
 In NEW terminal window (same directory):
 * ./geth --datadir node2 --unlock "NODE2_PUBLIC_ADDRESS" --mine --port 30304 --bootnodes "PASTE_ENODE://_HERE" --ipcdisable --allow-insecure-unlock
 * * enter your password for node2 account
-* enter the password even if you dont see the promt, enter it and you will begin mining new blocks
+Even if you dont see the promt, enter the password and you will see the nodes begin to update the network continuously. 
 
 ---
 Now that your nodes are up and running, you can connect to your new local network on your MyCrypto app!
