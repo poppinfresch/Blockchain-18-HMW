@@ -1,18 +1,16 @@
 # Blockchain-18-HMW
-Creating Nodes and Private Network using ETH to make transactions on custom blockchain.
 
-### Running a Proof of Authority Blockchain, Connecting Keystore Wallets & Sending a Transaction by Creating a Custom Local Network
+## Running a Proof of Authority Blockchain, Connecting Keystore Wallets & Sending a Transaction by Creating a Custom Local Network
 
------
-For this exercise you will be creating a separate account for each node
-
-To do this you must first download the dependencies for connecting to and running nodes on your local machine
+---
+For this exercise you will be creating a separate account for each node. To do this you must first download the dependencies for connecting to and running nodes on your local machine.
 
 Visit: https://geth.ethereum.org/downloads/ 
 * scroll down to Geth&Tools 1.9.7 
 ![image](screenshots/geth_stable_download.png)
 * open and save these tools in a folder somewhere you can access easily 
 
+---
 Next, open your terminal and navigate to the directory where you saved these tools
 * enter ls command to confirm 'puppeth' is in this folder
 * create two accounts, one for each node:
@@ -21,6 +19,7 @@ Next, open your terminal and navigate to the directory where you saved these too
 * you will be promted to create passwords for each, save those
 * copy the public address for each account and save them in notepad (label them accordingly)
 
+---
 Next you will generate a new genesis block 
 *  ./puppeth 
 * name your network "myfintech" (refrain from using caps, spaces or special characters)
@@ -37,6 +36,7 @@ Next you will generate a new genesis block
 ![configuration](screenshots/terminal_json_config.png)
 ![finder_config](screenshots/json_config_finder.png)
 
+---
 Next we will use the networkname.json you just exported to initialize the nodes we created with your two accound addresses.  In your CLI:
 * ./geth --datadir node1 init networkname.json
 * ./geth --datadir node2 init networkname.json
@@ -51,7 +51,8 @@ In NEW terminal window (same directory):
 * * enter your password for node2 account
 * enter the password even if you dont see the promt, enter it and you will begin mining new blocks
 
-Now that your nodes are running, you can connect to your new private local network on your MyCrypto app!
+---
+Now that your nodes are up and running, you can connect to your new local network on your MyCrypto app!
 * on the bottom LH corner click change network
 ![change_network](screenshots/change_network.png)
 * add custom node
@@ -61,6 +62,7 @@ Now that your nodes are running, you can connect to your new private local netwo
 * Save & Use custom Node
 * confirm you are on custom networkname
 
+---
 You are now ready to view and send money within your custom network using the accounts you created!
 * select the "View and Send" option from tabs on the left
 * select Keystore File (both node accounts we created are keystore wallets)
@@ -69,6 +71,7 @@ You are now ready to view and send money within your custom network using the ac
 * you should see millions of ETH in your wallet!
 ![full_wallet](screenshots/full_wallet.png)
 
+---
 Now lets test it out and send a transaction on your local network!
 * select "Send Ether & Tokens"
 * enter the public address for your other account
@@ -79,7 +82,9 @@ Now lets test it out and send a transaction on your local network!
 
 You've successfully completed your first block on your private blockchain.
 
-BONUS:
+---
+
+## BONUS:
 
 If you want to check your new balance in code
 * navigate to parent directory containing the folder with your Geth tools
