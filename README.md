@@ -49,15 +49,15 @@ Now you can use the nodes to begin mining new blocks. In your CLI:
 In NEW terminal window (same directory):
 * ./geth --datadir node2 --unlock "NODE2_PUBLIC_ADDRESS" --mine --port 30304 --bootnodes "PASTE_ENODE://_HERE" --ipcdisable --allow-insecure-unlock
 * * enter your password for node2 account
-* nodes will not connect until you enter the password, even if you dont see the promt, enter it and you will see it connect and begin mining new blocks
+* enter the password even if you dont see the promt, enter it and you will begin mining new blocks
 
 Now that your nodes are running, you can connect to your new private local network on your MyCrypto app!
 * on the bottom LH corner click change network
-* ![change_network](screenshots/change_network.png)
+![change_network](screenshots/change_network.png)
 * add custom node
-* ![custom_node](screenshots/custom_node.png)
+![custom_node](screenshots/custom_node.png)
 * enter custom network, network name, chain ID you created, and local network URL
-* ![custom_network](screenshots/custom_network.png)
+![custom_network](screenshots/custom_network.png)
 * Save & Use custom Node
 * confirm you are on custom networkname
 
@@ -67,15 +67,15 @@ You are now ready to view and send money within your custom network using the ac
 * click "select wallet file", navigate to your directory where you savd your geth tools, select node1, keystore, and upen the UTC file
 * enter the password you saved for account1 (node1), unlock wallet
 * you should see millions of ETH in your wallet!
-* ![full_wallet](screenshots/full_wallet.png)
+![full_wallet](screenshots/full_wallet.png)
 
 Now lets test it out and send a transaction on your local network!
 * select "Send Ether & Tokens"
 * enter the public address for your other account
 * enter noticable amount and send
-* ![confirm](screenshots/confirm_tx.png)
-* ![pending](screenshots/pending_tx.png)
-* ![success](screenshots/success_tx.png)
+![confirm](screenshots/confirm_tx.png)
+![pending](screenshots/pending_tx.png)
+![success](screenshots/success_tx.png)
 
 You've successfully completed your first block on your private blockchain.
 
@@ -86,10 +86,11 @@ If you want to check your new balance in code
 * touch crypto.py
 * code crypto.py  - to open in vs code
 * enter code below:
-* ![crypto](screenshots/crypto_py.png)
+![crypto](screenshots/crypto_py.png)
 * include .env file with your account1 private key (you can grab this from mycrypto app "wallet info")
 * save and navigate back to terminal directory containing crypto.py
 * run > python crypto.py
 * you should see your blocks mined, balance, and account address.
-* ![balance](screenshots/crypto_terminal.png)
-* 
+
+![balance](screenshots/crypto_terminal.png)
+
